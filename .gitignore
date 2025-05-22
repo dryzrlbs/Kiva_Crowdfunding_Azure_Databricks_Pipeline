@@ -1,0 +1,42 @@
+
+# ignore data folder
+kiva_loans_data/
+no_load/*
+Kiva_postgres_data/
+
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.tfstate.lock.info
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+# Azure secrets
+*.key
+config.json
+
+
+# Python
+__pycache__/
+*.pyc
+EOF

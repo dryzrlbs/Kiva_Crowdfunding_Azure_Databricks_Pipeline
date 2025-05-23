@@ -73,7 +73,7 @@ After the orchestration part bronze layer has some changes
   - All processes of the medallion architecture were automated
   - Pipeline was schedued every friday at 08:00am
 <p align="center">
-  <img width="60%" src="images_doc/ADF_pipeline_success.png" alt="API">
+  <img width="70%" src="images_doc/ADF_pipeline_success.png" alt="API">
 </p>
 
 ### Incremental Loading Strategy
@@ -94,10 +94,10 @@ After the orchestration part bronze layer has some changes
 - Reports are updated without requiring schema changes.
 
 <p align="center">
-  <img width="50%" src="images_doc/powerBI report1.png" alt="API">
+  <img width="60%" src="images_doc/powerBI report1.png" alt="API">
 </p>
 <p align="center">
-  <img width="50%" src="images_doc/powerBI_report_2.png" alt="API">
+  <img width="60%" src="images_doc/powerBI_report_2.png" alt="API">
 </p>
 
 ## Future Developments

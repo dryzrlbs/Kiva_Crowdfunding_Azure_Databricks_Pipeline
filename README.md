@@ -72,7 +72,8 @@ After the orchestration part bronze layer has some changes
 <p align="center">
   <img width="60%" src="images_doc/ADF_pipeline_success.png" alt="API">
 </p>
-## Incremental Loading Strategy
+
+### Incremental Loading Strategy
 
 - The `csv_to_bronze` notebook uses an incremental key (`funded_time`) to detect and load only new records.
 - Existing data in the Bronze layer is compared with incoming data based on the max value of this key.

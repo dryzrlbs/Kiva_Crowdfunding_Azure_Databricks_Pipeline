@@ -9,6 +9,9 @@ https://www.kiva.org/
 
 ## Overview
 This project implements an end-to-end ELT (Extract, Load, Transform) pipeline using the Medallion Architecture (Bronze → Silver → Gold) on Databricks for Kiva.org’s crowdfunding dataset. The pipeline processes raw CSV data files stored in Azure Data Lake Gen2 and delivers clean, enriched analytical datasets for Power BI dashboards.
+<p align="center">
+  <img width="60%" src="images_doc/madallionArch3.png" alt="API">
+</p>
 
 Kiva’s dataset contains detailed records of microloan transactions facilitated through the Kiva platform, including loan details, lender information, borrower profiles, repayment status, and geographical data. The data covers various attributes such as loan amounts, funding dates, sector categories (e.g., agriculture, retail), borrower demographics (gender, country, region), and loan performance metrics.
 
@@ -90,6 +93,12 @@ After the orchestration part bronze layer has some changes
 - Dataset refreshes automatically pick up new data written to Gold.
 - Reports are updated without requiring schema changes.
 
+<p align="center">
+  <img width="50%" src="images_doc/powerBI report1.png" alt="API">
+</p>
+<p align="center">
+  <img width="50%" src="images_doc/powerBI_report_2.png" alt="API">
+</p>
 
 ## Future Developments
 

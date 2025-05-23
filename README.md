@@ -3,7 +3,7 @@
     <strong>Kiva Crowdfunding Pipeline ELT Project - Databricks Madallion Architecture</strong>
 </h1>
 <p align="center">
-  <img width="60%" src="images_doc/madallionArch3.png" alt="API">
+  <img width="80%" src="images_doc/madallionArch3.png" alt="API">
 </p>
 
 ## Overview

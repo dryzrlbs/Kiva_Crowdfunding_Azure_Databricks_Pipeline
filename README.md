@@ -70,7 +70,7 @@ After the orchestration part bronze layer has some changes
   - All processes of the medallion architecture were automated
   - Pipeline was schedued every friday at 08:00am
 <p align="center">
-  <img width="50%" src="images_doc/ADF_pipeline_success.png" alt="API">
+  <img width="60%" src="images_doc/ADF_pipeline_success.png" alt="API">
 </p>
 ## Incremental Loading Strategy
 
@@ -116,4 +116,5 @@ The current ELT pipeline automates data ingestion, transformation, and loading u
   Adopt DevOps best practices using GitHub Actions or Azure DevOps for version control, continuous integration, and deployment of notebooks and ADF pipelines.
 
 
-
+## License
+This project is licensed under the MIT License - see the (LICENSE) file for details.

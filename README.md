@@ -3,14 +3,14 @@
     <strong>Kiva Crowdfunding Pipeline ELT Project - Databricks Madallion Architecture</strong>
 </h1>
 <p align="center">
-  <img width="80%" src="images_doc/madallionArch3.png" alt="API">
+  <img width="80%" src="images_doc/madallionArch3.png" alt="1">
 </p>
 
 ## Overview
 This project implements an end-to-end ELT (Extract, Load, Transform) pipeline using the Medallion Architecture (Bronze → Silver → Gold) on Databricks for Kiva.org’s crowdfunding dataset. The pipeline processes raw CSV data files stored in Azure Data Lake Gen2 and delivers clean, enriched analytical datasets for Power BI dashboards.
 
 <p align="center">
-  <img width="30%" src="images_doc/main.jpg" alt="API">
+  <img width="30%" src="images_doc/main.jpg" alt="2">
 </p>
 https://www.kiva.org/
 
@@ -74,7 +74,7 @@ After the orchestration part bronze layer has some changes
   - All processes of the medallion architecture were automated
   - Pipeline was schedued every friday at 08:00am
 <p align="center">
-  <img width="70%" src="images_doc/ADF_pipeline_success.png" alt="API">
+  <img width="70%" src="images_doc/ADF_pipeline_success.png" alt="3">
 </p>
 
 ### Incremental Loading Strategy
@@ -82,6 +82,12 @@ After the orchestration part bronze layer has some changes
 - The `csv_to_bronze` notebook uses an incremental key (`funded_time`) to detect and load only new records.
 - Existing data in the Bronze layer is compared with incoming data based on the max value of this key.
 - This avoids duplicate ingestion and supports seamless append-only data growth.
+- In the picture below  seen result after adding 1 test record (2018/01) for incremental loading
+- Initial state; kiva dataset has 2014-2017 years of data
+
+<p align="center">
+  <img width="80%" src="images_doc/bronze_incremantal _load_new data added.png" alt="4">
+</p>
 
 ## Monitoring and Logging
 
@@ -95,10 +101,10 @@ After the orchestration part bronze layer has some changes
 - Reports are updated without requiring schema changes.
 
 <p align="center">
-  <img width="60%" src="images_doc/powerBI report1.png" alt="API">
+  <img width="60%" src="images_doc/powerBI report1.png" alt="5">
 </p>
 <p align="center">
-  <img width="60%" src="images_doc/powerBI_report_2.png" alt="API">
+  <img width="60%" src="images_doc/powerBI_report_2.png" alt="6">
 </p>
 
 ## Future Developments
